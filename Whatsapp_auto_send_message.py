@@ -16,8 +16,11 @@ input("Please enter the any key for continui after scan QR")
 
 message = "Hello (this is Auto message)"
 
-contact_name = ["Bedo","Kubi"]
+FiltersName=["Bedo"]
+contact_name = ["Kubi","Bedo"]
 for i in contact_name:
+    if i in FiltersName:
+        continue
     # Wait find chatbox
     search_box = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, f"//span[@title='{i}']")))
