@@ -16,8 +16,8 @@ input("Please enter the any key for continui after scan QR")
 
 message = "Hello (this is Auto message)"
 
-FiltersName=["Bedo"]
-contact_name = ["Kubi","Bedo"]
+FiltersName=["Test2"]
+contact_name = ["Test1","Test2","Test3"]
 for i in contact_name:
     if i in FiltersName:
         continue
