@@ -20,7 +20,7 @@ contact_name = "Hikmet"
 
 # Wait find chatbox
 search_box = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, f"//span[@title='{contact_name}']")))
+    EC.presence_of_element_located((By.XPATH, f"//span[@title='{contact_name}']")))
 # Auto click on the finded person
 search_box.click()
 # Wait find the wanted person message box
