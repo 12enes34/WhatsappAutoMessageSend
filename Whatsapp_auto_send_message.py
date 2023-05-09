@@ -15,11 +15,11 @@ driver.get("https://web.whatsapp.com/")
 input("Please enter the any key for continui after scan QR")
 
 message = "Hello (this is Auto message)"
+FiltersNames=["Test2"]
+contact_names = ["Test1","Test2","Test3"]
 
-FiltersName=["Test2"]
-contact_name = ["Test1","Test2","Test3"]
-for i in contact_name:
-    if i in FiltersName:
+for i in contact_names:
+    if i in FiltersNames:
         continue
     # Wait find chatbox
     search_box = WebDriverWait(driver, 10).until(
